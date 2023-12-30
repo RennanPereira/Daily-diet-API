@@ -18,7 +18,7 @@ API desenvolvida para registrar todas as refeições que um usuário fizer duran
 
 Quando o usuário se registra, um cookie é criado e armazenado. Utilizamos esse cookie para validar o registro, adicionando-o na coluna "session_id" da tabela "user". Depois, usamos esse identificador para validar o usuário que está adicionando uma nova refeição, de modo que possamos adicionar o ID do usuário na tabela "meal".
 
-Tópicos abordados: `ESModule`, `Typescript`, `ESLint`, `Banco de dados - Knex, migrations, querys`,`Variáveis de ambiente`,`Validação de dados - ZOD`, `Fastify - Plugins, cookies e prehandlers`, `Testes automatizados - Tipos de testes, vitest, supertest`, `Build do projeto - TSUP` e `Deploy da aplicação`
+Tópicos abordados:`Typescript`, `ESLint`, `Banco de dados - Knex, migrations, querys`,`Variáveis de ambiente`,`Validação de dados - ZOD`, `Fastify - Plugins, cookies e prehandlers`, `Testes automatizados - Tipos de testes, vitest, supertest`, `Build do projeto - TSUP` e `Deploy da aplicação`
 
 ## Regras da aplicação
 
