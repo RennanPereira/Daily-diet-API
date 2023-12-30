@@ -40,6 +40,21 @@ Tópicos abordados: `ESModule`, `Typescript`, `ESLint`, `Banco de dados - Knex, 
       - Melhor sequência por dia de refeições dentro da dieta
   - [x] O usuário só pode visualizar, editar e apagar as refeições o qual ele criou
 
+## Instalação
+
+```bash
+# Faça o clone do repotório
+  gh repo clone RennanPereira/Daily-diet-API
+
+# Instalar as dependências do projeto
+  npm install
+
+# Executando o projeto no ambiente de desenvolvimento
+  npm run dev
+  
+# Rodar as migrations do projeto para criar o banco de dados
+  npm run knex -- migrate:latest
+```
 ## Rotas
 - Criar novo usuário
 ```bash
