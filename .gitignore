@@ -1,2 +1,12 @@
+# Development
 node_modules
+
+# Database
+tmp/*.db
+
+# Environment
 .env
+.env.test
+
+# Build
+dist
