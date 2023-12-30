@@ -49,21 +49,36 @@ Tópicos abordados:`Typescript`, `ESLint`, `Banco de dados - Knex, migrations, q
 # Instalar as dependências do projeto
   npm install
 
-# Executando o projeto no ambiente de desenvolvimento
-  npm run dev
-  
+# Criar arquivo '.env' na raiz do projeto e preenche-lo com os dados do arquivo '.env.exemple'
+
 # Rodar as migrations do projeto para criar o banco de dados
   npm run knex -- migrate:latest
+
+# Executando o projeto no ambiente de desenvolvimento
+  npm run dev
 ```
 ## Rotas
 - Criar novo usuário
 ```bash
 POST /user
+
+Body exemple:
+{
+	"userName":"Rennan",
+	"password": "12345"
+}
 ```
 
 - Criar novo registro de refeição
 ```bash
 POST /meal
+
+Body exemple:
+{
+	"name":"jantar",
+	"description": "Pizza",
+	"isOnDiet": false
+}
 ```
 
 - Listar todas refeições registradas pelo usuário
