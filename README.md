@@ -39,3 +39,48 @@ Tópicos abordados: `ESModule`, `Typescript`, `ESLint`, `Banco de dados - Knex, 
       - Quantidade total de refeições fora da dieta
       - Melhor sequência por dia de refeições dentro da dieta
   - [x] O usuário só pode visualizar, editar e apagar as refeições o qual ele criou
+
+## Rotas
+- Criar novo usuário
+```bash
+POST /user
+```
+
+- Criar novo registro de refeição
+```bash
+POST /meal
+```
+
+- Listar todas refeições registradas pelo usuário
+```bash
+GET /meal
+```
+
+- Listar uma refeição específica registrada pelo usuário
+```bash
+GET /meal/:id
+```
+
+- Mostrar um resumo geral das refeições cadastradas pelo usuário (total de refeições, refeições dentro da dieta e refeições fora da dieta)
+```bash
+GET /meal/summary
+```
+
+- Deletar uma refeição cadastrada
+```bash
+DELETE /meal/:id
+```
+
+- Editar uma refeição cadastrada
+```bash
+PUT /meal/:id
+```
+
+## Testes automatizados e2e
+  - [x] Should be able to create a new user
+  - [x] Should be able to create a new meal
+  - [x] Should be able to list all meals
+  - [x] Should be able to get a specific meal
+  - [x] Should be able to delete a meal
+  - [x] Should be able to get the summary
+  - [x] Should be able to update a meal
